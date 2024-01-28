@@ -1,0 +1,22 @@
+.StepDotWrapper {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.StepDot {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #cdced6;
+
+	&--active {
+		background-color: #5094fa;
+	}
+
+	&__Lg {
+		width: 1rem;
+		height: 1rem;
+	}
+}

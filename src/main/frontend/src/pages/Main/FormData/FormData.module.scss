@@ -1,0 +1,44 @@
+.Container {
+	display: flex;
+	flex-direction: column;
+
+	gap: 1.5rem;
+
+	width: 100%;
+}
+
+.FormDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+	width: 100%;
+}
+
+.Form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 100%;
+}
+
+/* 드롭다운 */
+.DropdownToggle {
+	display: flex !important;
+	align-items: center;
+	justify-content: space-between;
+	width: 406px !important;
+}
+
+.DropdownItem {
+	display: flex !important;
+	width: 420px !important;
+	justify-content: center !important;
+}
+
+/* 인풋 */
+.InputRequirements {
+	display: flex;
+	width: 420px;
+	height: 100px;
+}

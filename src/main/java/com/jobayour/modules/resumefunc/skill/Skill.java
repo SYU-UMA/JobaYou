@@ -1,0 +1,71 @@
+package com.jobayour.modules.resumefunc.skill;
+
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "skill")
+public class Skill {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "skillnum")
+    private int skillNum;
+    @Column(name = "userid")
+    private String userId;
+    @Column(name = "resumenum")
+    private int resumeNum;
+    @Column(name = "skill")
+    private String skill;
+
+    public Skill() {
+    }
+
+    public Skill(int skillNum, String userId, int resumeNum, String skill) {
+        this.skillNum = skillNum;
+        this.userId = userId;
+        this.resumeNum = resumeNum;
+        this.skill = skill;
+    }
+
+    public int getSkillNum() {
+        return skillNum;
+    }
+
+    public void setSkillNum(int skillNum) {
+        this.skillNum = skillNum;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public int getResumeNum() {
+        return resumeNum;
+    }
+
+    public void setResumeNum(int resumeNum) {
+        this.resumeNum = resumeNum;
+    }
+
+    public String getSkill() {
+        return skill;
+    }
+
+    public void setSkill(String skill) {
+        this.skill = skill;
+    }
+
+    @Override
+    public String toString() {
+        return "Skill{" +
+                "skillNum=" + skillNum +
+                ", userId='" + userId + '\'' +
+                ", resumeNum=" + resumeNum +
+                ", skill='" + skill + '\'' +
+                '}';
+    }
+}

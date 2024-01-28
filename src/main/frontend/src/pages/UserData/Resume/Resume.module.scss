@@ -1,0 +1,122 @@
+/* 모달창을 화면 중앙. 최상단에 노출 */
+.Modal {
+    /* 모달창 크기 */
+    position: fixed;
+  
+    align-items: center;
+    justify-content: center;
+  
+    width: 500px;
+  
+    /* 최상단 위치 */
+    z-index: 100002;
+  
+    /* 중앙 배치 */
+    /* top, bottom, left, right 는 브라우저 기준으로 작동한다. */
+    /* translate는 본인의 크기 기준으로 작동한다. */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /* 모달창 디자인 */
+    background-color: #fff;
+    border-radius: .5rem;
+  }
+  
+  /* 모달창 세션 */
+  .Section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2.5rem 2rem;
+  }
+  
+  /* 모달창 Form */
+  .FormDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .Form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  
+  /* 모달창 헤더 */
+  .ModalHeader {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  
+  /* 모달창 푸터 */
+  .ModalFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    box-shadow: inset 0 1px 0 var(-gray-200);
+  }
+  
+  /* 모달 배경 */
+  .ModalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100001;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+  }
+  
+  /* 드롭다운 */
+  .DropdownToggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 420px !important;
+  }
+  
+  .DropdownItem {
+    display: flex !important;
+    width: 420px !important;
+    justify-content: center !important;
+  }
+  
+  /* 인풋 */
+  .InputRequirements {
+    display: flex;
+    width: 420px;
+    height: 100px;
+  }
+
+  .ExtraDiv {
+    display: flex;
+    gap: 1rem;
+    padding: 0 2.5rem 1rem;
+    justify-content: space-between; /* 버튼들을 양쪽 끝으로 정렬 */
+  }
+  
+  /* 버튼 스타일 */
+  .Button {
+    flex: 1; /* 모든 버튼을 동일한 너비로 설정 */
+    max-width: 20%; /* 최대 너비를 모달 가로길이의 25%로 설정 */
+    height: 40px; /* 버튼의 높이 */
+    /* 추가적인 스타일 지정 가능 */
+  }
+  
+  .ExtraSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 2.5rem 2rem;
+  }

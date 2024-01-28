@@ -1,0 +1,16 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  box-shadow: 0 10px 10px rgba(159, 159, 159, 0.5);
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Link {
+  text-decoration: none !important;
+}

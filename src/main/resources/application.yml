@@ -1,0 +1,32 @@
+# DB config ??
+
+# DB config ??
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://jobayour-mysql.c89wgceeabum.ap-northeast-2.rds.amazonaws.com:3306/jobayour_db
+    username: root
+    password: ansungmin492!
+  profiles:
+    include: API-KEY
+
+
+  #JPA config
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        format_sql: true
+
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
+chatgpt:
+  api-key: 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
+server:
+  port: 8001

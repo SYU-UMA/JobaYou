@@ -1,0 +1,30 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 648px;
+
+  padding: 1rem;
+}
+
+.AuthConatiner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.Link {
+  text-decoration: none !important;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.SignIn {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}

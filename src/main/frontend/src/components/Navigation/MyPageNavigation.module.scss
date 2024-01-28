@@ -1,0 +1,19 @@
+.Header {
+	position: fixed;
+	top: 125px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 600px;
+}
+
+.AuthConatiner {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.Link {
+	text-decoration: none !important;
+}

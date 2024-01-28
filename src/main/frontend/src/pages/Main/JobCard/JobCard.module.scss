@@ -1,0 +1,29 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  white-space: wrap;
+  word-break: keep-all;
+  gap: 0.5rem;
+
+  width: 288px;
+  height: 200px;
+
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+
+  box-shadow: 0 6px 6px rgba(159, 159, 159, 0.5);
+
+  &:hover {
+    box-shadow: 0 10px 10px rgba(159, 159, 159, 0.5);
+  }
+
+  &_Title {
+    color: rgb(118, 118, 118);
+  }
+
+  &_Description {
+    color: rgb(45, 45, 45);
+    white-space: pre-wrap;
+  }
+}
